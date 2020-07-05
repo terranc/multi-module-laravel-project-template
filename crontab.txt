@@ -1,0 +1,1 @@
+* * * * * export LOG_CHANNEL=crontab; cd /var/www/backend && /usr/local/bin/php artisan schedule:run >> /var/www/backend/storage/logs/crontab.log 2>&1

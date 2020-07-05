@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QrCode with Logo browser test</title>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<script src="//www.promisejs.org/polyfills/promise-6.1.0.js"></script>
+<script src="../../lib/qr-code-with-logo.browser.min.js"></script>
+<script>
+  QrCodeWithLogo.toCanvas({
+    canvas: document.getElementById('canvas'),
+    content: 'http://blog.cloudself.cn/',
+    width: 380,
+    logo: {
+      src: 'http://blog.cloudself.cn/images/avatar.png',
+    }
+  })
+</script>
+</body>
+</html>

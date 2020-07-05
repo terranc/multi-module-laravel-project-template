@@ -1,0 +1,66 @@
+
+@media (max-width: 768px) {
+    .row .from-control_ratio {
+        width: 100% !important;
+    }
+}
+
+table tbody tr td:last-child a:not(:first-child) {
+    margin-left: 6px;
+}
+
+@keyframes loading_rotate {
+    0% {
+        transform: rotate(0)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.btn-loading .fa {
+    animation: loading_rotate 2s linear infinite;
+}
+body .swal2-popup {
+    font-size: 1.4rem;
+}
+.modal-content .box {
+    border: none !important;
+    box-shadow: none;
+}
+.modal-content .box .box-header{
+    display: none;
+}
+.modal-content .box .form-group {
+    margin-bottom: 10px;
+}
+.modal-content .box .form-group .box-body {
+    padding: 5px 10px;
+}
+.modal-content .box hr {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sidebar-menu .treeview-menu>li>a>.fa, .sidebar-menu .treeview-menu>li>a>.glyphicon, .sidebar-menu .treeview-menu>li>a>.ion {
+    visibility: hidden;
+}
+.bootstrap-datetimepicker-widget {
+    z-index: 1031 !important;
+}
+
+#totop {
+    display: none !important;
+}
+.switch-activity > a {
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+    .switch-activity > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 50vw;
+    }
+}

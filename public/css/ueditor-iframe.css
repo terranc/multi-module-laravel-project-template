@@ -1,0 +1,83 @@
+blockquote {
+    padding-left:10px;
+    border-left:3px solid #dbdbdb;
+    color:#9a9a9a;
+    line-height:1.6;
+    font-size:15px;
+    padding-top:4px;
+    margin:1em 0;
+}
+blockquote:active {
+    background-color:#fafafa
+}
+@font-face {
+    font-family:"mp-quote";
+    src:local('PingFang SC'), local('SimSun');
+    unicode-range:U+201c, U+201d, U+2018, U+2019
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:400;
+    font-size:16px
+}
+* {
+    margin:0;
+    padding:0
+}
+a {
+    color:#576b95;
+    text-decoration:none
+}
+html {
+    line-height:1.6;
+}
+body {
+    font-family:"mp-quote", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+    padding:20px 40px;
+    text-align:justify;
+    font-size:17px;
+    color:#333
+}
+.view {
+    word-break:break-word;
+    cursor:text;
+    word-wrap:break-word;
+    -webkit-hyphens:auto;
+    -ms-hyphens:auto;
+    hyphens:auto;
+    max-width: 654px;
+    margin: 0 auto;
+}
+p {
+    clear:both
+}
+img {
+    *zoom:1;
+    max-width:100%;
+    *max-width:96%;
+    height:auto!important
+}
+iframe {
+    border:0;
+    background-color:none
+}
+.vote_area {
+    display:block
+}
+.audio_iframe {
+    width:100%!important;
+    height:82px
+}
+.blockquote_iframe {
+    width:100%!important;
+    height:64px
+}
+.blockquote_tips_iframe {
+    width:100%!important;
+    height:42px
+}
+.video_iframe {
+    background-color:#000;
+    width:100%!important;
+    *width:96%!important;
+    position:static
+}

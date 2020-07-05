@@ -1,0 +1,166 @@
+[2020-07-05 23:33:25] local.ERROR: Class 'Codingyu\Ueditor\UeditorServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Codingyu\\Ueditor\\UeditorServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:37:25] local.ERROR: Class 'Codingyu\Ueditor\UeditorServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Codingyu\\Ueditor\\UeditorServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:38:53] local.ERROR: Class 'Codingyu\Ueditor\UeditorServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Codingyu\\Ueditor\\UeditorServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:39:22] local.ERROR: Class 'Codingyu\Ueditor\UeditorServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Codingyu\\Ueditor\\UeditorServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:40:07] local.ERROR: Class 'Codingyu\Ueditor\UeditorServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Codingyu\\Ueditor\\UeditorServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:43:14] local.ERROR: Class 'InsertOnDuplicateKey\InsertOnDuplicateKeyServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'InsertOnDuplicateKey\\InsertOnDuplicateKeyServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:44:42] local.ERROR: Class 'Field\Interaction\InteractionServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Field\\Interaction\\InteractionServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:47:03] local.ERROR: NOAUTH Authentication required. {"exception":"[object] (RedisException(code: 0): NOAUTH Authentication required. at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:90)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php(90): Redis->select()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Support/helpers.php(422): Illuminate\\Redis\\Connectors\\PhpRedisConnector->Illuminate\\Redis\\Connectors\\{closure}()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php(104): tap()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php(27): Illuminate\\Redis\\Connectors\\PhpRedisConnector->createClient()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php(31): Illuminate\\Redis\\Connectors\\PhpRedisConnector->Illuminate\\Redis\\Connectors\\{closure}()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php(110): Illuminate\\Redis\\Connectors\\PhpRedisConnector->connect()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Redis/RedisManager.php(90): Illuminate\\Redis\\RedisManager->resolve()
+#7 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php(242): Illuminate\\Redis\\RedisManager->connection()
+#8 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Cache/RedisStore.php(54): Illuminate\\Cache\\RedisStore->connection()
+#9 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Cache/Repository.php(97): Illuminate\\Cache\\RedisStore->get()
+#10 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Cache/CacheManager.php(378): Illuminate\\Cache\\Repository->get()
+#11 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/telescope/src/Watchers/DumpWatcher.php(43): Illuminate\\Cache\\CacheManager->__call()
+#12 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/telescope/src/RegistersWatchers.php(48): Laravel\\Telescope\\Watchers\\DumpWatcher->register()
+#13 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/telescope/src/Telescope.php(134): Laravel\\Telescope\\Telescope::registerWatchers()
+#14 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/telescope/src/TelescopeServiceProvider.php(31): Laravel\\Telescope\\Telescope::start()
+#15 [internal function]: Laravel\\Telescope\\TelescopeServiceProvider->boot()
+#16 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array()
+#17 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Container/Util.php(37): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure()
+#19 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#20 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call()
+#21 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\\Container\\Container->call()
+#22 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(839): Illuminate\\Foundation\\Application->bootProvider()
+#23 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#24 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(840): array_walk()
+#25 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#26 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#27 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#28 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#29 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#30 {main}
+"} {"inputs":[]}
+[2020-07-05 23:50:04] local.ERROR: Class 'Field\Interaction\InteractionServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Field\\Interaction\\InteractionServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:51:22] local.ERROR: Class 'Field\Interaction\InteractionServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Field\\Interaction\\InteractionServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:53:33] local.ERROR: Class 'Field\Interaction\InteractionServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'Field\\Interaction\\InteractionServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
+[2020-07-05 23:54:52] local.ERROR: Class 'InsertOnDuplicateKey\InsertOnDuplicateKeyServiceProvider' not found {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'InsertOnDuplicateKey\\InsertOnDuplicateKeyServiceProvider' not found at /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(593): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(219): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(320): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/vagrant/code/multi-module-laravel-project-template/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/vagrant/code/multi-module-laravel-project-template/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} {"inputs":[]}
