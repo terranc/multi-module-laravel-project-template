@@ -1,4 +1,4 @@
-## Usage
+## Installation
 
 ```shell
 cp .env.example .env
@@ -9,3 +9,15 @@ php artisan migrate --seed
 # admin/admin
 ```
 
+## Usage
+
+```php
+// Cache
+\CacheClient::put(fmt(CacheService::KEY_USER_INFO, 123), $user);    // 所有缓存Key必须统一在 CacheService 中定义
+
+// Exception
+throw new ApiNotFoundException('无可用记录');    // 404
+throw new ApiRequestException();    // 400
+throw new ApiSystemException();     // 500
+throw new ApiUnAuthException();     // 401
+```
