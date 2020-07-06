@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\TestEvent;
+use App\Listeners\TestListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Laravel\Telescope\Telescope;
 
@@ -12,6 +14,9 @@ class EventServiceProvider extends ServiceProvider {
      * @var array
      */
     protected $listen = [
+        TestEvent::class => [
+            TestListener::class,
+        ],
     ];
     protected $subscribe = [];
 
