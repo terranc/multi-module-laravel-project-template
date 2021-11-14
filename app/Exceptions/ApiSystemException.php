@@ -6,14 +6,11 @@
  * Time: 11:19 AM
  */
 
-namespace App\Exceptions\Api;
+namespace App\Exceptions;
 
-use App\Exceptions\ApiException;
-
-class ApiNotFoundException extends ApiException {
-
+class ApiSystemException extends ApiException {
     public function render() {
-        $this->noFound($this->getMessage());
+        $this->sysError($this->getMessage());
         return parent::render();
     }
 }

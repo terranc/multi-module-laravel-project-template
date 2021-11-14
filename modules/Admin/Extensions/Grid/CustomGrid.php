@@ -3,24 +3,11 @@
 
 namespace Modules\Admin\Extensions\Grid;
 
-use Closure;
 use Encore\Admin\Grid;
 use Encore\Admin\Grid\Exporter;
-use Encore\Admin\Grid\Model;
-use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class CustomGrid extends Grid {
-    public function __construct(Eloquent $model, Closure $builder = NULL) {
-        $this->model = new Model($model, $this);
-        $this->keyName = $model->getKeyName();
-        $this->builder = $builder;
-
-        $this->initialize();
-
-        // $this->handleExportRequest();
-
-        $this->callInitCallbacks();
-    }
+    protected array $abstractTool = [];
 
     public function handleCustomExportRequest() {
         $scope = request(Exporter::$queryName);
@@ -39,5 +26,18 @@ class CustomGrid extends Grid {
         }
 
         return $this->getExporter($scope)->export();
+    }
+
+    public function appendCustomButton($button): CustomGrid {
+        $this->abstractTool[] = $button;
+        return $this;
+    }
+
+    public function renderCustomButton(): string {
+        $html = '';
+        foreach ($this->abstractTool as $v) {
+            $html .= $v->render();
+        }
+        return $html;
     }
 }

@@ -26,43 +26,12 @@ class Base extends Model {
     protected $guarded = ['password_confirmation', 'from_url'];
     protected $scopes = [];
 
-    // 定义全局的 scope，有别于 globalScopes，方便扩展类重载
-
-    public static function removeGlobalScope($scope) {
-        if (isset(static::$globalScopes[static::class][$scope])) {
-            unset(static::$globalScopes[static::class][$scope]);
-        }
-    }
-
-    protected static function boot() {
-        parent::boot();
-        $scopes = (new static)->scopes;
-        foreach ($scopes as $key => $scope) {
-            static::addGlobalScope(new $scope);
-        }
-    }
-
-    public function getMorphClassAlias($class) {
-        $morphMap = Relation::morphMap();
-
-        if (!empty($morphMap) && in_array($class, $morphMap)) {
-            return array_search($class, $morphMap, true);
-        }
-
-        return $class;
-    }
 
     protected function asJson($value) {
-        return json_encode($value, JSON_NUMERIC_CHECK);
+        return json_encode($value, JSON_THROW_ON_ERROR | JSON_NUMERIC_CHECK);
     }
-
-    /**
-     * 判断是否需要加载全局查询作用域（默认对于非 Http\Controller\Admin 的查询自动添加全局作用域）
-     *
-     * @return bool
-     */
-    protected function isAddGlobalScopes() {
-        $route = request()->route();
-        return !($route && Str::is("App\Http\Controllers\Admin*", $route->getAction()['namespace']) === false);
+    protected function serializeDate(\DateTimeInterface $date)
+    {
+        return $date->format($this->dateFormat ?: 'Y-m-d H:i:s');
     }
 }

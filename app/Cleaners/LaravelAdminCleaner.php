@@ -13,7 +13,10 @@ class LaravelAdminCleaner extends LaravelAdminCleanerBase {
         'js'             => [],
         'html'           => [],
         'headerJs'       => [],
+        'manifest'       => 'vendor/laravel-admin/minify-manifest.json',
         'manifestData'   => [],
         'minifyIgnores'  => [],
+        'metaTitle'      => NULL,
+        'favicon'        => NULL,
     ];
 }

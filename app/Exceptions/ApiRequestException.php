@@ -6,13 +6,12 @@
  * Time: 11:19 AM
  */
 
-namespace App\Exceptions\Api;
+namespace App\Exceptions;
 
-use App\Exceptions\ApiException;
+class ApiRequestException extends ApiException {
 
-class ApiUnAuthException extends ApiException {
     public function render() {
-        $this->unauthorized($this->getMessage());
+        $this->requestError($this->getMessage());
         return parent::render();
     }
 }

@@ -11,6 +11,11 @@ function(value, opts) {
     return (value / 100).toPrecision(12);
 }
 EOT;
+        $options['onBeforePaste'] = <<<EOT
+function(value, opts) {
+    return value;
+}
+EOT;
         $options['onUnMask'] = <<<EOT
 function(maskedValue, unmaskedValue, opts) {
     return parseInt((unmaskedValue * 100).toPrecision(12));

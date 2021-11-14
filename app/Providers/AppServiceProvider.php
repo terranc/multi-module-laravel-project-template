@@ -36,7 +36,9 @@ use App\Observers\UrlObserver;
 use App\Observers\UserMoneyLogObserver;
 use App\Observers\UserObserver;
 use Encore\Admin\Config\ConfigModel;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\ServiceProvider;
 
@@ -60,8 +62,9 @@ class AppServiceProvider extends ServiceProvider {
      */
     public function boot() {
         bcscale(2);
+        Blade::withoutComponentTags();
         Redis::enableEvents();
-        Resource::withoutWrapping();
+        JsonResource::withoutWrapping();
         User::observe(UserObserver::class);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Exceptions\Api\ApiRequestException;
+use App\Exceptions\ApiRequestException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\JsonResponse;
@@ -21,10 +21,13 @@ class BaseRequest extends FormRequest {
      * @param Validator $validator
      *
      * @return JsonResponse|void
-     * @throws ApiRequestException
+     * @throws \App\Exceptions\ApiRequestException
      */
     protected function failedValidation(Validator $validator) {
         $error = $validator->errors()->all();
         throw new ApiRequestException($error[0]);
+    }
+    public function validated() {
+        return $this->validator->validated();
     }
 }

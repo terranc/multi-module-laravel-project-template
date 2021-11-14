@@ -5,9 +5,7 @@ namespace Modules\Admin\Extensions\Form;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Form\Field;
-use Encore\Admin\Form\NestedForm;
 
-// 修复内嵌 Table 组件
 class Table extends Field\Table
 {
     protected function setupScriptForTableView($templateScript)
@@ -51,5 +49,23 @@ $('#has-many-{$this->column}').on('click', '.remove', function () {
 EOT;
 
         Admin::script($script);
+    }
+
+    protected function buildNestedForm($column, \Closure $builder, $key = null)
+    {
+        $form = new NestedForm($column);
+        $form->setWidgetForm($this->form)
+            ->setKey($key);
+
+        call_user_func($builder, $form);
+
+        $form->hidden(NestedForm::REMOVE_FLAG_NAME)->default(0)->addElementClass(NestedForm::REMOVE_FLAG_CLASS);
+
+        return $form;
+    }
+
+    public function render()
+    {
+        return $this->renderTable();
     }
 }

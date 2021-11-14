@@ -4,15 +4,16 @@ use Spatie\Url\Url;
 
 if (!function_exists('full_url')) {
     function full_url($url) {
-        if (strpos($url, 'http') !== 0) {
-            return \Storage::disk(config('admin.upload.disk'))->url($url);
+        if ($url) {
+            if (strpos($url, 'http') !== 0) {
+                return \Storage::disk(config('admin.upload.disk'))->url($url);
+            }
         }
-
         return $url;
     }
 }
 if (!function_exists('hash_generate')) {
-    function hash_generate($length = 6) {
+    function hash_generate($length = 5) {
         $characters = str_repeat('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', $length);
 
         return substr(str_shuffle($characters), 0, $length);
@@ -236,12 +237,11 @@ function array2object($arr) {
     return json_decode(json_encode($arr));
 }
 
-// 获取毫秒
 function get_microtime() {
     return (int)(microtime(true) * 1000);
 }
 
-// 格式化金钱
+
 function money_formatter($fee, $float = false) {
     return number_format($float ? $fee : bcdiv($fee, 100), 2, '.', '');
 }
@@ -261,6 +261,23 @@ function http_build_url($url_arr) {
         $new_url = $new_url . "#" . $url_arr['fragment'];
     }
     return $new_url;
+}
+
+/**
+ * @return string
+ * @see 构建订单号
+ */
+function build_order_no() {
+    $order_id_main = date('YmdHis') . rand(10000000, 99999999);
+    //订单号码主体长度
+    $order_id_len = strlen($order_id_main);
+    $order_id_sum = 0;
+    for ($i = 0; $i < $order_id_len; $i++) {
+        $order_id_sum += (int)(substr($order_id_main, $i, 1));
+    }
+    //唯一订单号码（YYYYMMDDHHIISSNNNNNNNNCC）
+    $osn = $order_id_main . str_pad((100 - $order_id_sum % 100) % 100, 2, '0', STR_PAD_LEFT); //生成唯一订单号
+    return $osn;
 }
 
 
@@ -284,7 +301,20 @@ if (!function_exists('url_set_params')) {
         return $sRes;
     }
 }
+if (!function_exists('convertUrlQuery')) {
+    function convertUrlQuery($query) {
+        $queryParts = explode('&', $query);
+        $params = [];
+        foreach ($queryParts as $param) {
+            $item = explode('=', $param);
+            $params[$item[0]] = $item[1];
+        }
+
+        return $params;
+    }
+}
 if (!function_exists('http_build_url')) {
+
     function http_build_url($url_arr) {
         $new_url = $url_arr['scheme'] . "://" . $url_arr['host'];
         if (!empty($url_arr['port'])) {
@@ -334,9 +364,8 @@ if (!function_exists('curl_request')) {
         }
     }
 }
-
-// 无重叠区间检测
 if (!function_exists('check_overlap_intervals')) {
+    // 无重叠区间检测
     function check_overlap_intervals($intervals = []) {
         $len = count($intervals);               //计算区间总数
         // 初始化判断区间是否为空
@@ -364,15 +393,41 @@ if (!function_exists('check_overlap_intervals')) {
         return $len - $res;                     //题目求的是剔除的区间数，减法即可
     }
 }
-
-// UUID
 if (!function_exists('uuid')) {
     function uuid() {
         return sprintf('%04x%04x-%04x-%04x-%04x-%04x%04x%04x', mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0x0fff) | 0x4000, mt_rand(0, 0x3fff) | 0x8000, mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff));
     }
 }
 
-// 隐藏手机号码中间四位
 function privacy_phone($phone = '') {
-    return substr_replace($phone, '****', 3, 4);
+    return is_numeric($phone) ? substr_replace($phone, '****', 3, 4) : $phone;
+}
+
+if (!function_exists('thumbnail')) {
+    function thumbnail(
+        $url,
+        $mode,
+        $width,
+        $height,
+        $format = null,
+        $quality = null,
+        $interlace = null,
+        $ignoreError = 1
+    ) {
+
+        static $imageUrlBuilder = null;
+        if (is_null($imageUrlBuilder)) {
+            $imageUrlBuilder = new \Qiniu\Processing\ImageUrlBuilder;
+        }
+
+        return call_user_func_array(array($imageUrlBuilder, 'thumbnail'), func_get_args());
+    }
+}
+
+function format_hash($hash = '') {
+    if ($hash) {
+        return sprintf("%s...%s", substr($hash, 0, 6), substr($hash, -4));
+    } else {
+        return $hash;
+    }
 }

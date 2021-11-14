@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Admin\Controllers;
+namespace Modules\Admin\Http\Controllers;
 
 use Encore\Admin\Controllers\AdminController;
 use Illuminate\Http\Request;

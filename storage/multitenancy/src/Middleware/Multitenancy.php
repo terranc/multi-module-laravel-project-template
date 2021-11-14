@@ -15,7 +15,7 @@ class Multitenancy
 
     protected function overrideConfig($name)
     {
-        $config = require config("admin.extensions.multitenancy.$name");
+        $config = config($name);
 
         config(['admin' => $config]);
 
